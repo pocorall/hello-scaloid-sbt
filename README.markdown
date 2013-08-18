@@ -1,4 +1,4 @@
-# Hello Scaloid for maven
+# Hello Scaloid for sbt
 
 This is a template project that can be a starting point of a new [Scaloid](https://github.com/pocorall/scaloid) project. 
 
@@ -6,43 +6,22 @@ This contains minimum code as possible; therefore easy to run, examine and exten
 
 Prerequisites
 -------------
-* Maven 3
+* sbt
 * Android SDK
 
 Build
 -----
-You can build using Maven:
+You can build using sbt:
 
-    $ mvn clean package
+    $ sbt android:package
 
-This will compile the project and generate an APK. The generated APK is
-signed with the Android debug certificate. To generate a zip-aligned APK
-that is signed with an actual certificate, use:
+This will compile the project and generate an APK.
 
-    $ mvn clean package -Prelease
-
-The configuration for which certificate to use is in pom.xml.
-
-Run
----
-Deploy to an Android virtual device (AVD):
-
-    $ mvn android:deploy
-
-Using an IDE
-------------
-You can use Maven to generate project files for Eclipse or IDEA:
-
-    $ mvn eclipse:eclipse
-    $ mvn idea:idea
+For more command, refer to [Android SDK plugin for sbt](https://github.com/pfn/android-sdk-plugin).
 
 Further Reading
 ---------------
 - [Scaloid](https://github.com/pocorall/scaloid)
 - [Scaloid APIdemos](https://github.com/pocorall/scaloid-apidemos)
-- [Android Maven Plugin](http://code.google.com/p/maven-android-plugin/)
+- [Android SDK plugin for sbt](https://github.com/pfn/android-sdk-plugin)
 
-
-Origin
-------
-This project is forked from [android-scala-test](https://github.com/rohansingh/android-scala-test). Thanks [rohansingh](https://github.com/rohansingh)!
