@@ -8,7 +8,7 @@ scalaVersion := "2.10.2"
  
 proguardOptions in Android ++= Seq("-dontobfuscate", "-dontoptimize")
 
-libraryDependencies += "org.scaloid" %% "scaloid" % "2.3-8"
+libraryDependencies += "org.scaloid" %% "scaloid" % "2.4-8"
 
 scalacOptions in Compile += "-feature"
  
