@@ -1,1 +1,1 @@
- addSbtPlugin("com.hanhuy.sbt" % "android-sdk-plugin" % "1.0.3")
+ addSbtPlugin("com.hanhuy.sbt" % "android-sdk-plugin" % "1.0.6")

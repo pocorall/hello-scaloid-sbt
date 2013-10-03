@@ -4,7 +4,7 @@ android.Plugin.androidBuild
 
 name := "hello-scaloid-sbt"
  
-scalaVersion := "2.10.2"
+scalaVersion := "2.10.3"
  
 proguardOptions in Android ++= Seq("-dontobfuscate", "-dontoptimize")
 
