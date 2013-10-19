@@ -1,13 +1,13 @@
 # Hello Scaloid for sbt
 
-This is a template project that can be a starting point of a new [Scaloid](https://github.com/pocorall/scaloid) project. 
+This is a template project that can be a starting point of a new [Scaloid](https://github.com/pocorall/scaloid) project.
 
 This contains minimum code as possible; therefore easy to run, examine and extend.
 
 Prerequisites
 -------------
 * sbt 0.13.0 or above
-* Android SDK 
+* Android SDK
   - Both SDK Level 8 and the most recent version should be installed.
 
 Build
