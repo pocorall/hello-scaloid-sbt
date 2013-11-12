@@ -21,6 +21,13 @@ This will compile the project and generate an APK.
 For more command, refer to [Android SDK plugin for sbt](https://github.com/pfn/android-sdk-plugin).
 
 
+Using an IDE
+------------
+You can use sbt to generate project files for Eclipse or IDEA:
+
+    $ sbt eclipse
+    $ sbt gen-idea
+
 
 Troubleshooting
 ---------------
