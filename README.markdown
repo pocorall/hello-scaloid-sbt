@@ -20,14 +20,31 @@ This will compile the project and generate an APK.
 
 For more command, refer to [Android SDK plugin for sbt](https://github.com/pfn/android-sdk-plugin).
 
+Tips for faster development iteration
+-------------------------------------
+In sbt, `~` is a prefix that repeatedly runs the command when the source code is modified.
 
-Using an IDE
-------------
-You can use sbt to generate project files for Eclipse or IDEA:
+    ~ android:run
+    
+This sbt command executes compile-package-deploy-run process whenever you save the edited source code.
+Thanks to the proguard caching, this iteration takes about only few seconds.
+
+If you use default AVD, try genymotion or other faster virtual device. Deploying apk to the device becomes much faster!
+
+Using Eclipse
+-------------
 
     $ sbt eclipse
+
+Using IntelliJ IDEA
+-------------------    
+    
     $ sbt gen-idea
 
+Two more steps are needed for IDEA:
+
+ * Project Structure -> Project -> in Project SDK section, select proper Android SDK
+ * Porject Structure -> Modules -> add Android facet to your project module
 
 Troubleshooting
 ---------------
