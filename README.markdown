@@ -12,7 +12,7 @@ Prerequisites
 
 Build
 -----
-You can build using sbt:
+You can build this project using sbt:
 
     $ sbt android:package
 
