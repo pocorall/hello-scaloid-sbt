@@ -26,7 +26,7 @@ In sbt, `~` is a prefix that repeatedly runs the command when the source code is
 
     ~ android:run
     
-This sbt command executes compile-package-deploy-run process whenever you save the edited source code.
+This sbt command schedules to execute compile-package-deploy-run process after you save the edited source code.
 Compiling and packaging runs incrementally, so this iteration takes about only few seconds.
 
 If you use default AVD, try genymotion or other faster virtual device. Deploying apk to the device becomes much faster!
