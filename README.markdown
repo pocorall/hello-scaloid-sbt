@@ -18,7 +18,7 @@ You can build this project using sbt:
 
 This will compile the project and generate an APK.
 
-For more command, refer to [Android SDK plugin for sbt](https://github.com/pfn/android-sdk-plugin).
+For more command, refer to [android-sdk-plugin for sbt](https://github.com/pfn/android-sdk-plugin).
 
 Tips for faster development iteration
 -------------------------------------
@@ -45,6 +45,10 @@ Two more steps are needed for IDEA:
 
  * Project Structure -> Project -> in Project SDK section, select proper Android SDK
  * Porject Structure -> Modules -> add Android facet to your project module
+
+We do not recommend to use IDEA's own Android build system, because proguard settings are complicated and not fast.
+Use commands from [android-sdk-plugin for sbt](https://github.com/pfn/android-sdk-plugin).
+It runs simple and fast.
 
 Troubleshooting
 ---------------
