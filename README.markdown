@@ -12,22 +12,43 @@ Prerequisites
 
 Build
 -----
-You can build using sbt:
+You can build this project using sbt:
 
     $ sbt android:package
 
 This will compile the project and generate an APK.
 
-For more command, refer to [Android SDK plugin for sbt](https://github.com/pfn/android-sdk-plugin).
+For more command, refer to [android-sdk-plugin for sbt](https://github.com/pfn/android-sdk-plugin).
 
+Tips for faster development iteration
+-------------------------------------
+In sbt, `~` is a prefix that repeatedly runs the command when the source code is modified.
 
-Using an IDE
-------------
-You can use sbt to generate project files for Eclipse or IDEA:
+    ~ android:run
+    
+This sbt command schedules to execute compile-package-deploy-run process after you save the edited source code.
+Compiling and packaging runs incrementally, so this iteration takes about only few seconds.
+
+If you use default AVD, try genymotion or other faster virtual device. Deploying apk to the device becomes much faster!
+
+Using Eclipse
+-------------
 
     $ sbt eclipse
+
+Using IntelliJ IDEA
+-------------------    
+    
     $ sbt gen-idea
 
+Two more steps are needed for IDEA:
+
+ * Project Structure -> Project -> in Project SDK section, select proper Android SDK
+ * Porject Structure -> Modules -> add Android facet to your project module
+
+We do not recommend to use IDEA's own Android build system, because proguard settings are complicated and not fast.
+Use commands from [android-sdk-plugin for sbt](https://github.com/pfn/android-sdk-plugin).
+It runs simple and fast.
 
 Troubleshooting
 ---------------
