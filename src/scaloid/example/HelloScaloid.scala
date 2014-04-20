@@ -12,7 +12,6 @@ class HelloScaloid extends SActivity {
         case t: STextView => t textSize 10.dip
         case v => v.backgroundColor(Color.YELLOW)
       }
-
       STextView("I am 10 dip tall")
       STextView("Me too")
       STextView("I am taller than you") textSize 15.dip // overriding
