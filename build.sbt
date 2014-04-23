@@ -4,13 +4,13 @@ android.Plugin.androidBuild
 
 name := "hello-scaloid-sbt"
 
-scalaVersion := "2.10.4"
+scalaVersion := "2.11.0"
 
 proguardCache in Android ++= Seq(
   ProguardCache("org.scaloid") % "org.scaloid"
 )
 
-proguardOptions in Android ++= Seq("-dontobfuscate", "-dontoptimize")
+proguardOptions in Android ++= Seq("-dontobfuscate", "-dontoptimize", "-dontwarn scala.collection.mutable.**")
 
 libraryDependencies += "org.scaloid" %% "scaloid" % "3.3-8"
 
