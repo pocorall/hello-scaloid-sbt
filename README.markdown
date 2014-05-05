@@ -8,7 +8,7 @@ Prerequisites
 -------------
 * sbt 0.13.0 or above
 * Android SDK
-  - Both SDK Level 8 and the most recent version should be installed.
+  - Both SDK Level 10 and the most recent version should be installed.
 
 Build
 -----
