@@ -24,7 +24,7 @@ Tips for faster development iteration
 -------------------------------------
 In sbt, `~` is a prefix that repeatedly runs the command when the source code is modified.
 
-    ~ android:run
+    ~ run
     
 This sbt command schedules to execute compile-package-deploy-run process after you save the edited source code.
 Compiling and packaging runs incrementally, so this iteration takes about only few seconds.
