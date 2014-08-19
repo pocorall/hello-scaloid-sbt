@@ -10,13 +10,16 @@ class HelloScaloid extends SActivity {
       style {
         case b: SButton => b.textColor(Color.RED).onClick(toast("Bang!"))
         case t: STextView => t textSize 10.dip
-        case v => v.backgroundColor(Color.YELLOW)
+        case e: SEditText => e.backgroundColor(Color.YELLOW)
       }
       STextView("I am 10 dip tall")
       STextView("Me too")
-      STextView("I am taller than you") textSize 15.dip // overriding
-      SEditText("Yellow input field")
-      SButton(R.string.red)
+      STextView("I am 15 dip tall") textSize 15.dip // overriding
+	  this += new SLinearLayout {
+	    STextView("Button: ")
+        SButton(R.string.red)
+	  }.wrap
+	  SEditText("Yellow input field fills the space").fill
     } padding 20.dip
   }
 

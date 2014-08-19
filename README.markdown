@@ -6,7 +6,7 @@ This contains minimum code as possible; therefore easy to run, examine and exten
 
 Prerequisites
 -------------
-* sbt 0.13.0 or above
+* sbt 0.13.5 or above
 * Android SDK
   - Both SDK Level 10 and the most recent version should be installed.
 

@@ -4,7 +4,7 @@ android.Plugin.androidBuild
 
 name := "hello-scaloid-sbt"
 
-scalaVersion := "2.11.0"
+scalaVersion := "2.11.2"
 
 proguardCache in Android ++= Seq(
   ProguardCache("org.scaloid") % "org.scaloid"
