@@ -38,18 +38,23 @@ Using Eclipse
     $ sbt eclipse
 
 Using IntelliJ IDEA
--------------------    
-    
-    $ sbt gen-idea
+-------------------
 
-Two more steps are needed for IDEA:
+<h3>Generate the local.properties file</h3>
 
- * Project Structure -> Project -> in Project SDK section, select proper Android SDK
- * Porject Structure -> Modules -> add Android facet to your project module
+     $ android update project -p . # in the root of the project
 
-We do not recommend to use IDEA's own Android build system, because proguard settings are complicated and not fast.
-Use commands from [android-sdk-plugin for sbt](https://github.com/pfn/android-sdk-plugin).
-It runs simple and fast.
+<h3>Plugins</h3>
+
+Make sure the Scala & SBT plugins are installed in IntelliJ IDEA
+
+<h3>Import the SBT project</h3>
+
+ File -> Import Project... -> select project root folder -> OK -> Import project from external model -> SBT Project
+-> Check "Use auto-import" & for Project SDK, select an Android API platform -> Finish
+
+Edit the generated run configuration. Remove the 'Before launch: Make' then add a new SBT command `android:package` then tab out or it
+will not save, then click OK then OK. You now should be able to run and debug from the run configuration like normal.
 
 Troubleshooting
 ---------------
