@@ -40,21 +40,31 @@ Using Eclipse
 Using IntelliJ IDEA
 -------------------
 
-<h3>Generate the local.properties file</h3>
+### Generate the local.properties file
 
      $ android update project -p . # in the root of the project
 
-<h3>Plugins</h3>
+### Plugins
 
 Make sure the Scala & SBT plugins are installed in IntelliJ IDEA
 
-<h3>Import the SBT project</h3>
+### Import the SBT project
 
  File -> Import Project... -> select project root folder -> OK -> Import project from external model -> SBT Project
--> Check "Use auto-import" & for Project SDK, select an Android API platform -> Finish
+-> Check "Use auto-import" & for Project SDK, select an Android API platform -> Finish. Choose to configure the
+android project when IDEA asks.
 
-Edit the generated run configuration. Remove the 'Before launch: Make' then add a new SBT command `android:package` then tab out or it
-will not save, then click OK then OK. You now should be able to run and debug from the run configuration like normal.
+Edit the generated run configuration. Remove the 'Before launch: Make' then add a new SBT command `android:package-debug` then tab out or it
+will not save, then click OK then OK.
+
+You now should be able to run and debug from the run configuration like normal.
+
+### Troubleshooting IntelliJ
+
+`Local path doesn't exist.` when Intellij tries to deploy the apk.
+ 
+File -> Project Structure -> Modules -> hello-scaloid-sbt -> Android -> Packaging -> Then choose the APK Path for
+the apk. For this project it should be in .../bin/hello-scaloid-sbt-debug.apk
 
 Troubleshooting
 ---------------
