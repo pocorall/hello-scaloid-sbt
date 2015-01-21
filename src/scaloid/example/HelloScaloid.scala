@@ -15,11 +15,11 @@ class HelloScaloid extends SActivity {
       STextView("I am 10 dip tall")
       STextView("Me too")
       STextView("I am 15 dip tall") textSize 15.dip // overriding
-	  this += new SLinearLayout {
-	    STextView("Button: ")
+      this += new SLinearLayout {
+        STextView("Button: ")
         SButton(R.string.red)
-	  }.wrap
-	  SEditText("Yellow input field fills the space").fill
+      }.wrap
+      SEditText("Yellow input field fills the space").fill
     } padding 20.dip
   }
 
