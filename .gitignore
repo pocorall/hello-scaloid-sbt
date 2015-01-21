@@ -2,3 +2,6 @@ bin/
 gen/
 target/
 .idea*/
+build.xml
+local.properties
+proguard-*.txt
