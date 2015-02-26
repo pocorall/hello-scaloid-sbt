@@ -6,7 +6,7 @@ android.Plugin.androidBuild
 
 name := "hello-scaloid-sbt"
 
-scalaVersion := "2.11.4"
+scalaVersion := "2.11.5"
 
 proguardCache in Android ++= Seq(
   ProguardCache("org.scaloid") % "org.scaloid"
@@ -23,3 +23,5 @@ scalacOptions in Compile += "-feature"
 run <<= run in Android
 
 install <<= install in Android
+
+retrolambdaEnable in Android := false
