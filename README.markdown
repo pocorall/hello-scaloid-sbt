@@ -32,13 +32,10 @@ Compiling and packaging runs incrementally, so this iteration takes about only f
 
 If you use default AVD, try genymotion or other faster virtual device. Deploying apk to the device becomes much faster!
 
-Using Eclipse
--------------
-
-    $ sbt eclipse
 
 Using IntelliJ IDEA
 -------------------
+We recommend to use IntelliJ, [not Android Studio](https://github.com/pfn/android-sdk-plugin#advanced-usage) [nor Eclipse](https://github.com/pocorall/hello-scaloid-sbt/issues/15).
 
 ### Generate the local.properties file
 
