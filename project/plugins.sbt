@@ -1,5 +1,5 @@
-addSbtPlugin("com.hanhuy.sbt" % "android-sdk-plugin" % "1.3.16")
+addSbtPlugin("com.hanhuy.sbt" % "android-sdk-plugin" % "1.3.18")
 
-addSbtPlugin("com.typesafe.sbteclipse" % "sbteclipse-plugin" % "2.4.0")
+addSbtPlugin("com.typesafe.sbteclipse" % "sbteclipse-plugin" % "3.0.0")
 
 libraryDependencies += "net.sf.proguard" % "proguard-base" % "5.0"
