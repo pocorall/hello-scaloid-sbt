@@ -8,8 +8,8 @@ Prerequisites
 -------------
 * sbt 0.13.5 or above
 * Android build tools 20.0.0 or above
-* Android SDK
-  - Both SDK Level 10 and the most recent version should be installed.
+* Android SDK Level 16 or above
+ - Level 16 is required for building, while this app retains runtime compatibility from API Level 10. Please refer to `minSdkVersion` property in `AndroidManifest.xml`
 
 Build
 -----
