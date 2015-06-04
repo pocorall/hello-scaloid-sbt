@@ -19,6 +19,11 @@ You can build this project using sbt:
 
 This will compile the project and generate an APK.
 
+Run
+-----
+
+ sbt android:run
+
 For more command, refer to [android-sdk-plugin for sbt](https://github.com/pfn/android-sdk-plugin).
 
 Tips for faster development iteration
