@@ -1,16 +1,12 @@
-import android.Keys._
-
-javacOptions ++= Seq("-source", "1.7", "-target", "1.7")
-
-android.Plugin.androidBuild
-
 name := "hello-scaloid-sbt"
 
+import android.Keys._
+android.Plugin.androidBuild
+javacOptions ++= Seq("-source", "1.7", "-target", "1.7")
 scalaVersion := "2.11.6"
+scalacOptions in Compile += "-feature"
 
-proguardCache in Android ++= Seq(
-  ProguardCache("org.scaloid") % "org.scaloid"
-)
+proguardCache in Android ++= Seq("org.scaloid")
 
 proguardOptions in Android ++= Seq("-dontobfuscate", "-dontoptimize", "-keepattributes Signature", "-printseeds target/seeds.txt", "-printusage target/usage.txt"
   , "-dontwarn scala.collection.**" // required from Scala 2.11.4
@@ -19,10 +15,7 @@ proguardOptions in Android ++= Seq("-dontobfuscate", "-dontoptimize", "-keepattr
 
 libraryDependencies += "org.scaloid" %% "scaloid" % "4.0-RC1"
 
-scalacOptions in Compile += "-feature"
-
 run <<= run in Android
-
 install <<= install in Android
 
-retrolambdaEnable in Android := false
+retrolambdaEnable in Android := false // turning it on significantly increases the build time
