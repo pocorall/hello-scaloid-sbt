@@ -45,7 +45,7 @@ We recommend to use IntelliJ, [not Eclipse](https://github.com/pfn/android-sdk-p
 
 #### Generate the local.properties file
 
-     $ android update project -p . # in the root of the project
+     $ android update project -p src/main --target android-16 # in the root of the project
 
 #### Plugins
 
@@ -57,7 +57,7 @@ Make sure the Scala & [SBT](https://plugins.jetbrains.com/plugin/5007?pr=idea) p
 -> Check "Use auto-import" & for Project SDK, select an Android API platform -> Finish. Choose to configure the
 android project when IDEA asks.
 
-Edit the generated run configuration. Add 'Android application' configuration. Remove the 'Before launch: Make' then add a new SBT command `android:package-debug` then tab out or it
+Edit the generated run configuration. Add 'Android application' configuration. Remove the 'Before launch: Make' then add a new SBT command `android:package` then tab out or it
 will not save, then click OK then OK.
 
 You now should be able to run and debug from the run configuration like normal.

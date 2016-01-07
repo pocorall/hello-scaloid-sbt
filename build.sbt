@@ -7,6 +7,7 @@ javacOptions ++= Seq("-source", "1.7", "-target", "1.7")
 scalaVersion := "2.11.7"
 scalacOptions in Compile += "-feature"
 
+updateCheck in Android := {} // disable update check
 proguardCache in Android ++= Seq("org.scaloid")
 
 proguardOptions in Android ++= Seq("-dontobfuscate", "-dontoptimize", "-keepattributes Signature", "-printseeds target/seeds.txt", "-printusage target/usage.txt"
