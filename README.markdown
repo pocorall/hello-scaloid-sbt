@@ -60,11 +60,11 @@ Make sure the Scala & [SBT](https://plugins.jetbrains.com/plugin/5007?pr=idea) p
 
 #### Import the SBT project
 
- File -> Open... -> select project root folder -> OK
+File -> Open... -> select project root folder -> OK
 -> Check "Use auto-import" & for Project SDK, select an Android API platform -> Finish. Choose to configure the
 android project when IDEA asks.
 
-Edit the generated run configuration. Add 'Android application' configuration. Remove the 'Before launch: Make' then add a new SBT command `android:package` then tab out or it
+[Edit the generated run configuration](https://www.jetbrains.com/idea/help/run-debug-configurations.html). [Add 'Android application' configuration](https://www.jetbrains.com/idea/help/run-debug-configuration-android-application.html). Remove the 'Before launch: Make' then add a new SBT command `android:package` then tab out or it
 will not save, then click OK then OK.
 
 You now should be able to run and debug from the run configuration like normal.
