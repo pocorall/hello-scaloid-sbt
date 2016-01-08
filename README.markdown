@@ -27,6 +27,13 @@ Run
 
 For more command, refer to [android-sdk-plugin for sbt](https://github.com/pfn/android-sdk-plugin).
 
+Test
+-----
+A simple [Robolectric](http://robolectric.org/) test is implemented. You can run it with:
+
+    $ sbt test
+
+
 Tips for faster development iteration
 -------------------------------------
 In sbt, `~` is a prefix that repeatedly runs the command when the source code is modified.

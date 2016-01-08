@@ -5,6 +5,7 @@ import android.graphics.Color
 
 class HelloScaloid extends SActivity {
   lazy val meToo = new STextView("Me too")
+  lazy val redBtn = new SButton(R.string.red)
 
   onCreate {
     contentView = new SVerticalLayout {
@@ -18,7 +19,7 @@ class HelloScaloid extends SActivity {
       STextView("I am 15 dip tall") textSize 15.dip // overriding
       new SLinearLayout {
         STextView("Button: ")
-        SButton(R.string.red)
+        redBtn.here
       }.wrap.here
       SEditText("Yellow input field fills the space").fill
     } padding 20.dip
