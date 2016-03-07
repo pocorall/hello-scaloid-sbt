@@ -15,7 +15,7 @@ proguardOptions in Android ++= Seq("-dontobfuscate", "-dontoptimize", "-keepattr
   , "-dontwarn org.scaloid.**" // this can be omitted if current Android Build target is android-16
 )
 
-libraryDependencies += "org.scaloid" %% "scaloid" % "4.1"
+libraryDependencies += "org.scaloid" %% "scaloid" % "4.2"
 
 run <<= run in Android
 install <<= install in Android
