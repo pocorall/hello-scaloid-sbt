@@ -4,7 +4,7 @@ import android.Keys._
 android.Plugin.androidBuild
 
 javacOptions ++= Seq("-source", "1.7", "-target", "1.7")
-scalaVersion := "2.11.7"
+scalaVersion := "2.11.12"
 scalacOptions in Compile += "-feature"
 
 updateCheck in Android := {} // disable update check
@@ -17,8 +17,7 @@ proguardOptions in Android ++= Seq("-dontobfuscate", "-dontoptimize", "-keepattr
 
 libraryDependencies += "org.scaloid" %% "scaloid" % "4.2"
 
-run <<= run in Android
-install <<= install in Android
+run := (run in Android).evaluated
 
 // Tests //////////////////////////////
 
