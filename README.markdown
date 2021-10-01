@@ -10,7 +10,7 @@ Prerequisites
 * JDK 1.7 or above
 * Android build tools 20.0.0 or above
 * Android SDK Level 16
- - Level 16 is required for building, while this app retains runtime compatibility from API Level 10. Please refer to `minSdkVersion` property in `AndroidManifest.xml`
+<p>Note: Level 16 is required for building, while this app retains runtime compatibility from API Level 10. Please refer to `minSdkVersion` property in `AndroidManifest.xml`</p>
 
 Build
 -----
@@ -77,7 +77,7 @@ Troubleshooting
 `Local path doesn't exist.` when Intellij tries to deploy the apk.
 
 File -> Project Structure -> Modules -> hello-scaloid-sbt -> Android -> Packaging -> Then choose the APK Path for
-the apk. For this project it should be in .../bin/hello-scaloid-sbt-debug.apk
+the apk. For this project it should be in <code>.../bin/hello-scaloid-sbt-debug.apk</code>
 
 #### Build error `Android SDK build-tools not available`
 [The most likely cause of this error is that your SDK build-tools are old.](https://github.com/pfn/android-sdk-plugin/issues/13) Update the Android SDK and retry.
